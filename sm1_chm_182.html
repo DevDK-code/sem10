@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHM-182 Course Materials</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fff3b0, #f9d923); /* Yellow gradient */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #2d2d2d;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #4a4a4a;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+
+        .semester-card {
+            background: #fff3b0; /* Light yellow */
+            border-radius: 100px; /* Elliptical shape */
+            width: 90%;
+            max-width: 700px;
+            padding: 30px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
+                        -10px -10px 20px rgba(255, 255, 255, 0.7); /* Neomorphism */
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .semester-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.3), 
+                        -12px -12px 25px rgba(255, 255, 255, 0.8);
+            background: linear-gradient(45deg, #ffb703, #ffdd00); /* Hover gradient */
+        }
+
+        .heading_div {
+            margin-bottom: 20px;
+        }
+
+        #heading_para {
+            font-size: 2rem;
+            color: #2d2d2d;
+            font-weight: 600;
+        }
+
+        .material_contentBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .material_items_2 {
+            background: #fff3b0;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15), 
+                        -5px -5px 10px rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .material_items_2:hover {
+            transform: scale(1.05);
+            box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2), 
+                        -7px -7px 15px rgba(255, 255, 255, 0.7);
+            background: #ffdd00; /* Bright yellow on hover */
+        }
+
+        .material_items_2 p {
+            font-size: 1.2rem;
+            color: #2d2d2d;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .material_items_2 ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .material_items_2 a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 1rem;
+        }
+
+        .material_items_2 a:hover {
+            color: #2d2d2d;
+            text-decoration: underline;
+        }
+
+        .coming-soon-note {
+            font-size: 1rem;
+            color: #4a4a4a;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .semester-card {
+                padding: 20px;
+            }
+
+            #heading_para {
+                font-size: 1.5rem;
+            }
+
+            .material_items_2 {
+                padding: 15px;
+            }
+
+            .material_items_2 p {
+                font-size: 1.1rem;
+            }
+
+            .material_items_2 a {
+                font-size: 0.9rem;
+            }
+
+            .coming-soon-note {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CHM-182 Course Materials</h1>
+        <p>Resources for the Applied Chemistry Lab (CHM-182) will be available soon.</p>
+    </header>
+    <div class="semester-card">
+        <div class="heading">
+            <div class="heading_div">
+                <p id="heading_para">CHM-182</p>
+            </div>
+        </div>
+        <div class="material_contentBox">
+            <div class="material_items_2">
+                <p>Applied Chemistry Lab</p>
+                <ul>
+                    <li><a href="/coming">Coming Soon...</a></li>
+                </ul>
+            </div>
+            <p class="coming-soon-note">Stay tuned! Study materials, notes, and lab resources for CHM-182 will be uploaded soon.</p>
+        </div>
+    </div>
+    <script>
+        // Optional: Add interactivity for the coming soon link
+        const comingSoonLink = document.querySelector('.material_items_2 a');
+        comingSoonLink.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default navigation
+            alert('Content for CHM-182 is coming soon! Check back later.');
+        });
+    </script>
+</body>
+</html>

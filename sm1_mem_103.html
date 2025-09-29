@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEM-103 Course Materials</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fff3b0, #f9d923); /* Yellow gradient */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #2d2d2d;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #4a4a4a;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+
+        .semester-card {
+            background: #fff3b0; /* Light yellow */
+            border-radius: 100px; /* Elliptical shape */
+            width: 90%;
+            max-width: 800px;
+            padding: 30px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
+                        -10px -10px 20px rgba(255, 255, 255, 0.7); /* Neomorphism */
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .semester-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.3), 
+                        -12px -12px 25px rgba(255, 255, 255, 0.8);
+            background: linear-gradient(45deg, #ffb703, #ffdd00); /* Hover gradient */
+        }
+
+        .heading_div {
+            margin-bottom: 20px;
+        }
+
+        #heading_para {
+            font-size: 2rem;
+            color: #2d2d2d;
+            font-weight: 600;
+        }
+
+        .material_contentBox {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .material_item {
+            background: #fff3b0;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15), 
+                        -5px -5px 10px rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+            text-align: center;
+            width: 100%;
+        }
+
+        .material_item:hover {
+            transform: scale(1.05);
+            box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2), 
+                        -7px -7px 15px rgba(255, 255, 255, 0.7);
+            background: #ffdd00; /* Bright yellow on hover */
+        }
+
+        .material_item p {
+            font-size: 1.2rem;
+            color: #2d2d2d;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .material_item a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 1rem;
+        }
+
+        .material_item a:hover {
+            color: #2d2d2d;
+            text-decoration: underline;
+        }
+
+        .material_item ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-height: 200px; /* Limit height for long lists */
+            overflow-y: auto; /* Scroll for long lists */
+        }
+
+        .material_item ul::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .material_item ul::-webkit-scrollbar-thumb {
+            background: #ffb703;
+            border-radius: 10px;
+        }
+
+        .subcategory {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #2d2d2d;
+            font-weight: 500;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .semester-card {
+                padding: 20px;
+            }
+
+            #heading_para {
+                font-size: 1.5rem;
+            }
+
+            .material_contentBox {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .material_item {
+                padding: 15px;
+            }
+
+            .material_item p {
+                font-size: 1.1rem;
+            }
+
+            .material_item a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MEM-103 Course Materials</h1>
+        <p>Access study resources for MEM-103, including tests, notes, question banks, and reference materials.</p>
+    </header>
+    <div class="semester-card">
+        <div class="heading">
+            <div class="heading_div">
+                <p id="heading_para">MEM-103</p>
+            </div>
+        </div>
+        <div class="material_contentBox">
+            <div class="material_item">
+                <p>Class Tests</p>
+                <ul>
+                    <ul>
+                    <li><a href="https://drive.google.com/drive/folders/1bWZBiYWnZYvVk7i9eQqCoUWS9siGoQ9Z?usp=drive_link">CT-1</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1D9xgHZBi3azszHvm4OUogAJyP8oYGaXY">CT1</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/17BssUIxFT-fcb3BARiheQk8D4km9jxjG?usp=drive_link">CT-2</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1DBQ5p1qCQSVn0Cq33sJ-7pnJIL-NG3Wq">CT2</a></li>
+                </ul>
+            </div>
+            <div class="material_item">
+                <p>End Semester</p>
+                <ul>
+                    <li><a href="https://drive.google.com/drive/folders/10TXGURajJP6P8C1-18P8jvxxI_F1I7D3?usp=drive_link">End Semester</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1DOZaQM10QV8Jwh_Wjq1iXJKbXtOuRXa9">End Semester</a></li>
+                </ul>
+            </div>
+            <div class="material_item">
+                <p>Notes & Resources</p>
+                <ul>
+                    <li><a href="https://drive.google.com/drive/folders/1DdRZd3XzcsqDE81pUXYJMZDH9SJ7HZpM?usp=drive_link">Unit-1</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1_13r5PDA-SNXzgxihxzh-lG4RbAxhcjv?usp=drive_link">Unit-2</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1yxJoJNgaeEL82ttoz3U2hip0yw4yXFVD?usp=drive_link">Unit-3</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1E2WoOn0vbXpiD-sqlnm0O83QaIYtunNx?usp=drive_link">Unit-4</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1Gg_mB1YSWNwwQtSsxqut8VaFn8kVK02j?usp=drive_link">Unit-5</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1Dcfhce_mLlYsZuy-UVgRiKsGOclUIIsA">Complete Notes</a></li>
+                    <li><a href="http://msvs-dei.vlabs.ac.in/mem103/mem.html">Quizzes & Simulations</a></li>
+                </ul>
+            </div>
+            <div class="material_item">
+                <p>Question Bank</p>
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1wHQuP8hE_NJ92lPqhy2541zJLPioAOP_/view?usp=drive_link">Question Bank</a></li>
+                </ul>
+            </div>
+            <div class="material_item">
+                <p>Books & References</p>
+                <ul>
+                    <li class="subcategory">Books</li>
+                    <li><a href="https://drive.google.com/file/d/15okOeombgqNsSzchoflFsnYfd1QZtDWg/view?usp=drivesdk">H.N. Gupta</a></li>
+                    <li><a href="https://drive.google.com/file/d/15msPIkop9cLnrf0O2iFpFVFz6wXPkzuq/view?usp=drivesdk">Serope Kalpakjian</a></li>
+                    <li><a href="https://drive.google.com/file/d/1PQLD2Gmwq2EXGWbUfNkJeVOV0S0ksZYR/view?usp=drive_link">Mikell P. Groover</a></li>
+                    <li><a href="https://drive.google.com/file/d/19iX80Gwj6m2v1Y8Y9BcTprwvjuMWr88x/view?usp=drive_link">Groover Answers</a></li>
+                    <li class="subcategory">Topic-Specific References</li>
+                    <li><a href="https://drive.google.com/file/d/1WdGD7aoawO_eTbSP7JD_zimfy7wwgOvL/view?usp=drive_link">Casting</a></li>
+                    <li><a href="https://drive.google.com/file/d/1-s4Gsya0D6Pq1FcDBJ2rH4gbmT8RE7dD/view?usp=drive_link">Drilling and Milling</a></li>
+                    <li><a href="https://drive.google.com/file/d/1UealOyMCQX19UXBIvwL5qsx-UK-tGmPk/view?usp=drive_link">Grinding, Broaching, and Surface Finishing</a></li>
+                    <li><a href="https://drive.google.com/file/d/1TSxycDbPoUS1uC7wK1wtWs_TXAL2skLn/view?usp=drive_link">Jigs & Fixtures and Gear Cutting</a></li>
+                    <li><a href="https://drive.google.com/file/d/1c9aYs7Q8ZHkmpoRnKbe6W6-U1Qzbo6Gl/view?usp=drive_link">Lathe and Turret Lathe</a></li>
+                    <li><a href="https://drive.google.com/file/d/1IAZM3bKsFIUnaIttKk4W4tw-bVNVYwzi/view?usp=drive_link">Shaper and Planer</a></li>
+                    <li><a href="https://drive.google.com/file/d/1PBTK8UMSbpb9JwHrU2_ZKBSBPRUoWEyX/view?usp=drive_link">Theory of Metal Cutting</a></li>
+                    <li><a href="https://drive.google.com/file/d/1V5PIBTS7j3DNzc5Aejb5k31Nxd2EiOEM/view?usp=drive_link">Welding</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Optional: Add interactivity for links
+        const links = document.querySelectorAll('.material_item a');
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                // Uncomment to add custom behavior
+                // e.preventDefault();
+                // alert(`Opening ${link.textContent} resource!`);
+            });
+        });
+    </script>
+</body>
+</html>

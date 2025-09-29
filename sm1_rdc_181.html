@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDC-181 Course Materials</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fff3b0, #f9d923); /* Yellow gradient */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #2d2d2d;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #4a4a4a;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+
+        .semester-card {
+            background: #fff3b0; /* Light yellow */
+            border-radius: 100px; /* Elliptical shape */
+            width: 90%;
+            max-width: 800px;
+            padding: 30px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
+                        -10px -10px 20px rgba(255, 255, 255, 0.7); /* Neomorphism */
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .semester-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.3), 
+                        -12px -12px 25px rgba(255, 255, 255, 0.8);
+            background: linear-gradient(45deg, #ffb703, #ffdd00); /* Hover gradient */
+        }
+
+        .heading_div {
+            margin-bottom: 20px;
+        }
+
+        #heading_para {
+            font-size: 2rem;
+            color: #2d2d2d;
+            font-weight: 600;
+        }
+
+        .material_contentBox {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .material_item {
+            background: #fff3b0;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15), 
+                        -5px -5px 10px rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+            text-align: center;
+            width: 100%;
+        }
+
+        .material_item:hover {
+            transform: scale(1.05);
+            box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2), 
+                        -7px -7px 15px rgba(255, 255, 255, 0.7);
+            background: #ffdd00; /* Bright yellow on hover */
+        }
+
+        .material_item p {
+            font-size: 1.2rem;
+            color: #2d2d2d;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .material_item a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 1rem;
+        }
+
+        .material_item a:hover {
+            color: #2d2d2d;
+            text-decoration: underline;
+        }
+
+        .material_item ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-height: 200px; /* Limit height for long lists */
+            overflow-y: auto; /* Scroll for long lists */
+        }
+
+        .material_item ul::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .material_item ul::-webkit-scrollbar-thumb {
+            background: #ffb703;
+            border-radius: 10px;
+        }
+
+        .subcategory {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #2d2d2d;
+            font-weight: 500;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .semester-card {
+                padding: 20px;
+            }
+
+            #heading_para {
+                font-size: 1.5rem;
+            }
+
+            .material_contentBox {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .material_item {
+                padding: 15px;
+            }
+
+            .material_item p {
+                font-size: 1.1rem;
+            }
+
+            .material_item a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RDC-181 Course Materials</h1>
+        <p>Access study resources for RDC-181, including class tests and notes on surveying and agricultural practices.</p>
+    </header>
+    <div class="semester-card">
+        <div class="heading">
+            <div class="heading_div">
+                <p id="heading_para">RDC-181</p>
+            </div>
+        </div>
+        <div class="material_contentBox">
+            <div class="material_item">
+                <p>Class Tests</p>
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1QVKCIA0Gfi1X3BQjdYJ4FUYsPEDFhYFO/view?usp=drive_link">CT-1</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/14vEKYpsNQVWh5XTxaT71ZL2SpEGPqjDd">CT-2</a></li>
+                </ul>
+            </div>
+            <div class="material_item">
+                <p>Notes</p>
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1t_hMryNNNQveE0WSwP3w2Vb1sTWJQAgl/view?usp=drive_link">Syllabus</a></li>
+                    <li class="subcategory">Surveying</li>
+                    <li><a href="https://docs.google.com/presentation/d/17L2RyY34yMrnu0y_8blUFA8sIU_X_Ynj/edit?usp=drive_link&ouid=101067883698885470640&rtpof=true&sd=true">Levelling-1</a></li>
+                    <li><a href="https://docs.google.com/presentation/d/19DIT8JuqmDi4XCr7XTH_cUk4h7ovea2h/edit?usp=drive_link&ouid=101067883698885470640&rtpof=true&sd=true">Levelling-2</a></li>
+                    <li><a href="https://drive.google.com/file/d/15tTYPwgc5_qbprtkSrxY-IJgA5L8mfBX/view?usp=drivesdk">Land Surveying</a></li>
+                    <li><a href="https://drive.google.com/file/d/15yiMrTPzlYukCc1DYLNep3YXwwH_bO0e/view?usp=drivesdk">Chain and Compass Surveying</a></li>
+                    <li><a href="https://drive.google.com/file/d/15vbWBPcqjGAu09xeAaWG-0UttoCCEhG8/view?usp=drivesdk">Plane Table Surveying</a></li>
+                    <li><a href="https://drive.google.com/file/d/1626lCsVLlGL5Rg0bXLbp9oZWT1GmsubS/view?usp=drivesdk">Levelling</a></li>
+                    <li class="subcategory">Agricultural Practices</li>
+                    <li><a href="https://drive.google.com/file/d/164uCUu2G6CsaYVLGNvmlyrxP27xqs8xA/view?usp=drivesdk">Agriculture Farming</a></li>
+                    <li><a href="https://drive.google.com/file/d/166nL7XBwnN9_R0zFkXFY5Bu0WeDC5k41/view?usp=drivesdk">Preparation of Land</a></li>
+                    <li><a href="https://drive.google.com/file/d/16BJgD5tLfsoPRhlrmd78ggabWP4qb4E6/view?usp=drivesdk">Different Operation of Farming</a></li>
+                    <li class="subcategory">General Resources</li>
+                    <li><a href="https://drive.google.com/file/d/1cz2x165uIZc2ArKp4eyroud-JS1lTaBY/view?usp=drive_link">Book</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Optional: Add interactivity for links
+        const links = document.querySelectorAll('.material_item a');
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                // Uncomment to add custom behavior
+                // e.preventDefault();
+                // alert(`Opening ${link.textContent} resource!`);
+            });
+        });
+    </script>
+</body>
+</html>

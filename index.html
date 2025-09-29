@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Tech Course Timeline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fff3b0, #f9d923);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            color: #2d2d2d;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #4a4a4a;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+
+        .book-bank-btn {
+            position: absolute;
+            top: 20px; /* Moved lower from top: 0 to top: 20px */
+            right: 0;
+            width: 60px;
+            height: 60px;
+            background: #ffb703;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d2d2d;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), 
+                        -4px -4px 10px rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+        }
+
+        .book-bank-btn:hover {
+            background: linear-gradient(45deg, #ffdd00, #ffb703);
+            transform: scale(1.1);
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3), 
+                        -6px -6px 12px rgba(255, 255, 255, 0.8);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            width: 100%;
+            padding: 20px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background: #ffb703;
+            transform: translateX(-50%);
+        }
+
+        .semester-card {
+            position: relative;
+            width: 45%;
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff3b0;
+            border-radius: 100px;
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), 
+                       -8px -8px 15px rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .semester-card:nth-child(odd) {
+            left: 55%;
+        }
+
+        .semester-card:nth-child(even) {
+            left: 5%;
+        }
+
+        .semester-card:hover {
+            transform: scale(1.05);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), 
+                       -10px -10px 20px rgba(255, 255, 255, 0.8);
+            background: linear-gradient(45deg, #ffb703, #ffdd00);
+        }
+
+        .semester-card h2 {
+            font-size: 1.5rem;
+            color: #2d2d2d;
+            margin-bottom: 10px;
+        }
+
+        .semester-card p {
+            font-size: 1rem;
+            color: #4a4a4a;
+        }
+
+        .semester-card::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #ffb703;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .semester-card:nth-child(odd)::before {
+            left: -30px;
+        }
+
+        .semester-card:nth-child(even)::before {
+            right: -30px;
+        }
+
+        .semester-card::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background: #ffb703;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .semester-card:nth-child(odd)::after {
+            left: -50px;
+        }
+
+        .semester-card:nth-child(even)::after {
+            right: -50px;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+
+            .semester-card {
+                width: 80%;
+                left: 50px !important;
+            }
+
+            .semester-card::before {
+                left: -30px !important;
+            }
+
+            .semester-card::after {
+                left: -50px !important;
+                right: auto !important;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .book-bank-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 0.9rem;
+                top: 10px; /* Adjusted for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>B.Tech Journey</h1>
+        <p>Discover the semester-wise progression of the B.Tech program, designed to build your engineering expertise.</p>
+        <a href="https://devdk-code.github.io/BookBank/" class="book-bank-btn" target="_blank" id="bookBankBtn">Books</a>
+    </header>
+    <div class="timeline">
+        <div class="semester-card" data-semester="1">
+            <h2>Semester 1</h2>
+            <p>Introduction to Engineering, Mathematics I, Physics, Manufacturing processes</p>
+        </div>
+        <div class="semester-card" data-semester="2">
+            <h2>Semester 2</h2>
+            <p>Mathematics II, Chemistry, Data Structures, Engineering Graphics</p>
+        </div>
+        <div class="semester-card" data-semester="3">
+            <h2>Semester 3</h2>
+            <p>Strength of Materials I, Engineering Geology, Surveying I, Fluid Mechanics I</p>
+        </div>
+        <div class="semester-card" data-semester="4">
+            <h2>Semester 4</h2>
+            <p>Structural Analysis I, Building Materials & Construction, Surveying II, Fluid Mechanics II</p>
+        </div>
+        <div class="semester-card" data-semester="5">
+            <h2>Semester 5</h2>
+            <p>Concrete Technology, Geotechnical Engineering I, Transportation Engineering I, Design of Steel Structures</p>
+        </div>
+        <div class="semester-card" data-semester="6">
+            <h2>Semester 6</h2>
+            <p>Structural Analysis II, Geotechnical Engineering II, Water Resources Engineering, Transportation Engineering II</p>
+        </div>
+        <div class="semester-card" data-semester="7">
+            <h2>Semester 7</h2>
+            <p>Environmental Engineering, Construction Management & Estimation, Elective I (e.g., Remote Sensing / GIS), Project Work / Internship</p>
+        </div>
+        <div class="semester-card" data-semester="8">
+            <h2>Semester 8</h2>
+            <p>Capstone Project / Advanced Structural Design, Elective II (e.g., Earthquake Engineering), Professional Ethics & Safety, Seminar</p>
+        </div>
+    </div>
+    <!-- Audio element for click sound -->
+    <audio id="clickSound" src="button-41.wav"></audio>
+    <script>
+        // Existing semester card navigation
+        const cards = document.querySelectorAll('.semester-card');
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                const semesterNum = card.getAttribute('data-semester');
+                const url = `sm${semesterNum}_b.tech.html`;
+                window.location.href = url;
+            });
+        });
+
+        // Play sound on Book Bank button click
+        const bookBankBtn = document.getElementById('bookBankBtn');
+        const clickSound = document.getElementById('clickSound');
+        bookBankBtn.addEventListener('click', () => {
+            clickSound.currentTime = 0; // Reset sound to start
+            clickSound.play(); // Play the sound
+        });
+    </script>
+</body>
+</html>

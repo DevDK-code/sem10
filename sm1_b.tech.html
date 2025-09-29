@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Tech Semester 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #fff3b0, #f9d923);
+            /* Yellow gradient background */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            color: #2d2d2d;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            color: #4a4a4a;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+        
+        .semester-card {
+            background: #fff3b0;
+            /* Light yellow card */
+            border-radius: 100px;
+            /* Elliptical shape */
+            width: 90%;
+            max-width: 600px;
+            padding: 30px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2),
+                -10px -10px 20px rgba(255, 255, 255, 0.7);
+            /* Neomorphism */
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .semester-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.3),
+                -12px -12px 25px rgba(255, 255, 255, 0.8);
+            background: linear-gradient(45deg, #ffb703, #ffdd00);
+            /* Hover gradient */
+        }
+        
+        .heading_div {
+            margin-bottom: 20px;
+        }
+        
+        #heading_para {
+            font-size: 2rem;
+            color: #2d2d2d;
+            font-weight: 600;
+        }
+        
+        .contentbox {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            justify-items: center;
+        }
+        
+        .item {
+            background: #fff3b0;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15),
+                -5px -5px 10px rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+        }
+        
+        .item:hover {
+            transform: scale(1.05);
+            box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2),
+                -7px -7px 15px rgba(255, 255, 255, 0.7);
+            background: #ffdd00;
+            /* Bright yellow on hover */
+        }
+        
+        .item a {
+            text-decoration: none;
+            color: #2d2d2d;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        
+        .item a:hover {
+            color: #4a4a4a;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            header p {
+                font-size: 1rem;
+            }
+            
+            .semester-card {
+                padding: 20px;
+            }
+            
+            #heading_para {
+                font-size: 1.5rem;
+            }
+            
+            .contentbox {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 10px;
+            }
+            
+            .item {
+                padding: 10px;
+            }
+            
+            .item a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>B.Tech Semester 1</h1>
+        <p>Explore the subjects for the first semester of your B.Tech journey.</p>
+    </header>
+    <div class="semester-card">
+        <div class="heading">
+            <div class="heading_div">
+                <p id="heading_para">Semester 1</p>
+            </div>
+        </div>
+        <div class="contentbox">
+            <div class="item">
+                <a href="sm1_chm_181.html">CHM-181</a>
+            </div>
+            <div class="item">
+                <a href="sm1_chm_182.html">CHM-182</a>
+            </div>
+            <div class="item">
+                <a href="sm1_mam_181.html">MAM-181</a>
+            </div>
+            <div class="item">
+                <a href="sm1_mem_101&102.html">MEM-101&102</a>
+            </div>
+            <div class="item">
+                <a href="sm1_mem_103.html">MEM-103</a>
+            </div>
+            <div class="item">
+                <a href="sm1_mem_104.html">MEM-104</a>
+            </div>
+            <div class="item">
+                <a href="sm1_phm_181.html">PHM-181</a>
+            </div>
+            <div class="item">
+                <a href="sm1_phm_182.html">PHM-182</a>
+            </div>
+            <div class="item">
+                <a href="sm1_rdc_181.html">RDC-181</a>
+            </div>
+            <div class="item">
+                <a href="ech181.html">Ech</a>
+            </div>
+            <div class="item">
+                <a href="bbh.html">BBH</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Optional: Add interactivity for subject links
+        const items = document.querySelectorAll('.item a');
+        items.forEach(item => {
+            item.addEventListener('click', (e) => {
+                // Uncomment and modify to handle link clicks if needed
+                // e.preventDefault();
+                // alert(`Navigating to ${item.textContent} details!`);
+            });
+        });
+    </script>
+</body>
+
+</html>

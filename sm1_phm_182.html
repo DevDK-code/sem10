@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHM-182 Course Materials</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fff3b0, #f9d923); /* Yellow gradient */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #2d2d2d;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #4a4a4a;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+
+        .semester-card {
+            background: #fff3b0; /* Light yellow */
+            border-radius: 100px; /* Elliptical shape */
+            width: 90%;
+            max-width: 800px;
+            padding: 30px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
+                        -10px -10px 20px rgba(255, 255, 255, 0.7); /* Neomorphism */
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .semester-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.3), 
+                        -12px -12px 25px rgba(255, 255, 255, 0.8);
+            background: linear-gradient(45deg, #ffb703, #ffdd00); /* Hover gradient */
+        }
+
+        .heading_div {
+            margin-bottom: 20px;
+        }
+
+        #heading_para {
+            font-size: 2rem;
+            color: #2d2d2d;
+            font-weight: 600;
+        }
+
+        .material_contentBox {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .material_item {
+            background: #fff3b0;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15), 
+                        -5px -5px 10px rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+            text-align: center;
+            width: 100%;
+        }
+
+        .material_item:hover {
+            transform: scale(1.05);
+            box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2), 
+                        -7px -7px 15px rgba(255, 255, 255, 0.7);
+            background: #ffdd00; /* Bright yellow on hover */
+        }
+
+        .material_item p {
+            font-size: 1.2rem;
+            color: #2d2d2d;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .material_item a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 1rem;
+        }
+
+        .material_item a:hover {
+            color: #2d2d2d;
+            text-decoration: underline;
+        }
+
+        .material_item ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .coming-soon-note {
+            font-size: 1rem;
+            color: #4a4a4a;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .semester-card {
+                padding: 20px;
+            }
+
+            #heading_para {
+                font-size: 1.5rem;
+            }
+
+            .material_contentBox {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .material_item {
+                padding: 15px;
+            }
+
+            .material_item p {
+                font-size: 1.1rem;
+            }
+
+            .material_item a {
+                font-size: 0.9rem;
+            }
+
+            .coming-soon-note {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PHM-182 Course Materials</h1>
+        <p>Access study resources for PHM-182, including experiment materials for the Applied Physics Lab.</p>
+    </header>
+    <div class="semester-card">
+        <div class="heading">
+            <div class="heading_div">
+                <p id="heading_para">PHM-182</p>
+            </div>
+        </div>
+        <div class="material_contentBox">
+            <div class="material_item">
+                <p>Experiments</p>
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/17CGAqbo1E-wnhyJigzBTfkqhIPs3CEl5/view?usp=drive_link">Ex-1 Polarimeter</a></li>
+                    <li><a href="https://drive.google.com/file/d/1_hA89HHgQ327NnABiZsvDWQYPMX88B07/view?usp=drive_link">Ex-2 Nodal Slide</a></li>
+                    <li><a href="https://drive.google.com/file/d/1e4RksDybUvhm-MP8tNh1LtoXjiyGYo72/view?usp=drive_link">Ex-3 Newton's Ring</a></li>
+                    <li><a href="https://drive.google.com/file/d/1_qm-XX7tBhyHk5rjKUxOzPGclJN77INS/view?usp=drive_link">Ex-4 Diffraction Grating</a></li>
+                    <li><a href="https://drive.google.com/file/d/1YgP8Xd0dfSkpV3WgFuklLM-RZhHL1KkF/view?usp=drive_link">Ex-5 Fresnel Biprism</a></li>
+                </ul>
+            </div>
+            <p class="coming-soon-note">Stay tuned! Additional Applied Physics Lab resources for PHM-182 may be uploaded soon.</p>
+        </div>
+    </div>
+    <script>
+        // Optional: Add interactivity for links
+        const links = document.querySelectorAll('.material_item a');
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                // Uncomment to add custom behavior
+                // e.preventDefault();
+                // alert(`Opening ${link.textContent} resource!`);
+            });
+        });
+    </script>
+</body>
+</html>

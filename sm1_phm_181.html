@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHM-181 Course Materials</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #fff3b0, #f9d923);
+            /* Yellow gradient */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            color: #2d2d2d;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            color: #4a4a4a;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+        
+        .semester-card {
+            background: #fff3b0;
+            /* Light yellow */
+            border-radius: 100px;
+            /* Elliptical shape */
+            width: 90%;
+            max-width: 800px;
+            padding: 30px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2),
+                -10px -10px 20px rgba(255, 255, 255, 0.7);
+            /* Neomorphism */
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .semester-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.3),
+                -12px -12px 25px rgba(255, 255, 255, 0.8);
+            background: linear-gradient(45deg, #ffb703, #ffdd00);
+            /* Hover gradient */
+        }
+        
+        .heading_div {
+            margin-bottom: 20px;
+        }
+        
+        #heading_para {
+            font-size: 2rem;
+            color: #2d2d2d;
+            font-weight: 600;
+        }
+        
+        .material_contentBox {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        
+        .material_item {
+            background: #fff3b0;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15),
+                -5px -5px 10px rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .material_item:hover {
+            transform: scale(1.05);
+            box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2),
+                -7px -7px 15px rgba(255, 255, 255, 0.7);
+            background: #ffdd00;
+            /* Bright yellow on hover */
+        }
+        
+        .material_item p {
+            font-size: 1.2rem;
+            color: #2d2d2d;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        
+        .material_item a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 1rem;
+        }
+        
+        .material_item a:hover {
+            color: #2d2d2d;
+            text-decoration: underline;
+        }
+        
+        .material_item ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-height: 200px;
+            /* Limit height for long lists */
+            overflow-y: auto;
+            /* Scroll for long lists */
+        }
+        
+        .material_item ul::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .material_item ul::-webkit-scrollbar-thumb {
+            background: #ffb703;
+            border-radius: 10px;
+        }
+        
+        .coming-soon {
+            color: #4a4a4a;
+            cursor: default;
+        }
+        
+        .coming-soon:hover {
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            header p {
+                font-size: 1rem;
+            }
+            
+            .semester-card {
+                padding: 20px;
+            }
+            
+            #heading_para {
+                font-size: 1.5rem;
+            }
+            
+            .material_contentBox {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .material_item {
+                padding: 15px;
+            }
+            
+            .material_item p {
+                font-size: 1.1rem;
+            }
+            
+            .material_item a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PHM-181 Course Materials</h1>
+        <p>Access study resources for PHM-181, including tests, notes, lecture videos, question banks, and recommended books.</p>
+    </header>
+    <div class="semester-card">
+        <div class="heading">
+            <div class="heading_div">
+                <p id="heading_para">PHM-181</p>
+            </div>
+        </div>
+        <div class="material_contentBox">
+            <div class="material_item">
+                <p>Class Tests</p>
+                <ul>
+                    <ul>
+                        
+                    </ul>
+                    <li><a href="https://drive.google.com/drive/folders/1nz-1aIJiVQaPZHeWDxpGQVX_5QBhlFFM?usp=drive_link">CT-1</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1DkdgXbMh70KI7ZP8tpo6edvo0IQtLCf1">CT1</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1GRdZfw5MBghLJKj0ig7VSrzxfDznknYO?usp=sharing">CT-2</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1DnI_eb-mTGFq5gEnTKttRaDjrFTtxDEq">CT2</a></li>
+                </ul>
+            </div>
+            <div class="material_item">
+                <p>End Semester</p>
+                <ul>
+                    <li><a href="https://drive.google.com/drive/folders/1fcWfRj8eOVxzTbYa8sQYAOZfMMiaMAIH?usp=drive_link">End Semester</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1DrtGt79BmoEyCo29dogEUSCS8CSPWT1r">End Semester</a></li>
+                </ul>
+            </div>
+            <div class="material_item">
+                <p>Notes</p>
+                <ul>
+                    <li><a href="https://drive.google.com/drive/folders/1DyllJl9W3Ev6mlKgVshc8PKicIQSDa_d">Complete Notes</a></li>
+                    <li><a href="https://drive.google.com/file/d/1BzA-BqDMPPa6LYshTXdHu_Sqjy5tr1Se/view?usp=drive_link">Unit-1 (Sample 1)</a></li>
+                    <li><a href="https://drive.google.com/file/d/1ygrjd43Cqb-AuG9yQGHr6nO8OXpdCvJ5/view?usp=drive_link">Unit-1 (Sample 2)</a></li>
+                    <li><a href="https://drive.google.com/file/d/1C4__u2B72ka7mF4zKKqehLFx9qchcdWp/view?usp=drive_link">Unit-2 (Sample 1)</a></li>
+                    <li><a href="https://drive.google.com/file/d/1EBEPrESUCLgUeI2ZtMKC2G2gM1Yu7rzp/view?usp=drive_link">Unit-2 (Sample 2)</a></li>
+                    <li><a href="https://drive.google.com/file/d/1C5R5BmcLUHT_VQAJbcwvuyXSmodgo0TX/view?usp=drive_link">Unit-3 (Sample 1)</a></li>
+                    <li><a href="https://drive.google.com/file/d/1tqPQCjlm17sNsDhXAJvs5Tl0dJb5A8hV/view?usp=drive_link">Unit-3 (Sample 2)</a></li>
+                    <li><a href="https://drive.google.com/file/d/1C6AE85xZmaqAoUWqalbQ-dSuXIQuUd2_/view?usp=drive_link">Unit-4 (Sample 1)</a></li>
+                    <li><a href="https://drive.google.com/file/d/1Lkr0ZxIGw1m76AdqKm-3-upvRM7dDw9m/view?usp=drive_link">Unit-4 (Sample 2)</a></li>
+                    <li><a href="https://drive.google.com/file/d/1C76aa-jkCG8-dpzVhBcQKPExvfot4Bq4/view?usp=drive_link">Unit-5 (Sample 1)</a></li>
+                    <li><a href="https://drive.google.com/file/d/1KRqk_Kfp2VsNtBgplz6KqfpLmgC1faKB/view?usp=drive_link">Unit-5 (Sample 2)</a></li>
+                </ul>
+            </div>
+            <div class="material_item">
+                <p>Lecture Videos</p>
+                <ul>
+                    <li><a href="https://youtube.com/playlist?list=PLGMWqLEnh9cK4A3_bNakFF5QhKYMQc03L&si=25N7nRDmTS0u_p1i">Unit-1</a></li>
+                    <li><a href="https://youtube.com/playlist?list=PLGMWqLEnh9cJ0ueYJZv2ZjCZcbT4yGUBd&si=-kQeAAdMDjSvx5bQ">Unit-2</a></li>
+                    <li><a href="https://youtube.com/playlist?list=PLGMWqLEnh9cL6xRZ-oOGosvKHeE8O7n2W&si=ZxqzdTZBz5lZ9mfX">Unit-3</a></li>
+                    <li><a href="https://youtube.com/playlist?list=PLGMWqLEnh9cLeQJHRgNa1ZN8v_kxOHrzZ&si=vgj4IiI1Fyzjmo2g">Unit-4</a></li>
+                    <li><a href="#" class="coming-soon">Unit-5 (Coming Soon...)</a></li>
+                </ul>
+            </div>
+            <div class="material_item">
+                <p>Question Bank & Solutions</p>
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1CAQ-ZWLJv6YUDcQy9cYD5YxAZ5FD7l-q/view?usp=drive_link">Question Bank</a></li>
+                    <li><a href="https://drive.google.com/file/d/1dc4aACl9xM7bz9FZlrzoPJQkZm1o3kib/view?usp=drive_link">Unit-1 Solutions</a></li>
+                    <li><a href="https://drive.google.com/file/d/1QtuS-E07G9iIO09-uockMlyrMZog9xA7/view?usp=drive_link">Unit-2 Solutions</a></li>
+                    <li><a href="https://drive.google.com/file/d/18gE3l5YBIJQ2pRBpVByvKWmA4DQR7WUZ/view?usp=drive_link">Unit-3 Solutions</a></li>
+                    <li><a href="https://drive.google.com/file/d/11AbCb2BnffThhooCJ_Bwc-LpnLfBjNTn/view?usp=drive_link">Unit-4 Solutions</a></li>
+                    <li><a href="https://drive.google.com/file/d/1CWcAZfiEHrifqmNA8KQGJSFPFqMGzMvL/view?usp=drive_link">Unit-5 Solutions</a></li>
+                </ul>
+            </div>
+            <div class="material_item">
+                <p>Books</p>
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1ek1JRxiN1DXLi_1Rj8XCGkOQckBCIdkr/view?usp=drive_link">Interference</a></li>
+                    <li><a href="https://drive.google.com/file/d/1Pr5fzLfTuqc31p2Y9sK77xpt8HGNvUpP/view?usp=drive_link">Eugene Hecht</a></li>
+                    <li><a href="https://drive.google.com/file/d/1EdUXTGF9r35IUtUDKMl2saUhAQxJ9xoQ/view?usp=drive_link">A.P. French</a></li>
+                    <li><a href="https://drive.google.com/file/d/1wmbNtZqbImtJM5BFAHAOvVp1EPdcTAFT/view?usp=drive_link">Sands, Feynman, and Leighton</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Optional: Add interactivity for links
+        const links = document.querySelectorAll('.material_item a');
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.classList.contains('coming-soon')) {
+                    e.preventDefault();
+                    alert('This resource is coming soon!');
+                }
+                // Uncomment for additional custom behavior
+                // else {
+                //     e.preventDefault();
+                //     alert(`Opening ${link.textContent} resource!`);
+                // }
+            });
+        });
+    </script>
+</body>
+
+</html>

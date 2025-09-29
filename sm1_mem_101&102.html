@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEM-101&102 Course Materials</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fff3b0, #f9d923); /* Yellow gradient */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #2d2d2d;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #4a4a4a;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+
+        .semester-card {
+            background: #fff3b0; /* Light yellow */
+            border-radius: 100px; /* Elliptical shape */
+            width: 90%;
+            max-width: 800px;
+            padding: 30px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
+                        -10px -10px 20px rgba(255, 255, 255, 0.7); /* Neomorphism */
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .semester-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.3), 
+                        -12px -12px 25px rgba(255, 255, 255, 0.8);
+            background: linear-gradient(45deg, #ffb703, #ffdd00); /* Hover gradient */
+        }
+
+        .heading_div {
+            margin-bottom: 20px;
+        }
+
+        #heading_para {
+            font-size: 2rem;
+            color: #2d2d2d;
+            font-weight: 600;
+        }
+
+        .material_contentBox {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .material_item {
+            background: #fff3b0;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15), 
+                        -5px -5px 10px rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+            text-align: center;
+            width: 100%;
+        }
+
+        .material_item:hover {
+            transform: scale(1.05);
+            box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2), 
+                        -7px -7px 15px rgba(255, 255, 255, 0.7);
+            background: #ffdd00; /* Bright yellow on hover */
+        }
+
+        .material_item p {
+            font-size: 1.2rem;
+            color: #2d2d2d;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .material_item a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 1rem;
+        }
+
+        .material_item a:hover {
+            color: #2d2d2d;
+            text-decoration: underline;
+        }
+
+        .material_item ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-height: 200px; /* Limit height for long lists */
+            overflow-y: auto; /* Scroll for long lists like Lecture Videos */
+        }
+
+        .material_item ul::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .material_item ul::-webkit-scrollbar-thumb {
+            background: #ffb703;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .semester-card {
+                padding: 20px;
+            }
+
+            #heading_para {
+                font-size: 1.5rem;
+            }
+
+            .material_contentBox {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .material_item {
+                padding: 15px;
+            }
+
+            .material_item p {
+                font-size: 1.1rem;
+            }
+
+            .material_item a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MEM-101&102 Course Materials</h1>
+        <p>Access study resources for MEM-101&102, including tests, problem sheets, lecture videos, solution videos, books, and question banks.</p>
+    </header>
+    <div class="semester-card">
+        <div class="heading">
+            <div class="heading_div">
+                <p id="heading_para">MEM-101&102</p>
+            </div>
+        </div>
+        <div class="material_contentBox">
+            <div class="material_item">
+                <p>Class Tests</p>
+                <ul>
+                    <li><a href="https://drive.google.com/drive/folders/1Tmvvxr2TXAPIb2GuS3mxStjnGhYtvEqP?usp=drive_link">CT-1</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1Crupt9bWALW4cgwSUwAgs6ei-ecK2qJ8">CT1</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1-fshz6dsk8dqvnK7uDrBk5ducRgi3lFh?usp=drive_link">CT-2</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1CvE2b84qp1Q4cdUS1kQj0nVPR-g8wgiq">CT2</a></li>
+
+                </ul>
+            </div>
+            <div class="material_item">
+                <p>End Semester</p>
+                <ul>
+                    <li><a href="https://drive.google.com/drive/folders/1dtbWJxnHYL3iojVTgH1dG5c3WMv9wcwY?usp=drive_link">End Semester</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1CvR4Wqxm54yM4IaU4xAceqZxWfrVmpNR">End Semester</a></li>
+
+                </ul>
+            </div>
+            <div class="material_item">
+                <p>Problem Sheets</p>
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/13uTIdWWpMvkcQx5W9U9QgQBiM5PyMZUF/view?usp=drivesdk">Title Block</a></li>
+                    <li><a href="https://drive.google.com/file/d/13gWTkvF7unqf0MCLHaK8LUPHFHAucnXn/view?usp=drivesdk">Engineering Curves</a></li>
+                    <li><a href="https://drive.google.com/file/d/13viOkMO-PdbMFaXQRm0Bk674Ntl_sbpP/view?usp=drivesdk">Projection of Straight Lines</a></li>
+                    <li><a href="https://drive.google.com/file/d/13OMmv-mis5ks-NRvMX0w3iv5zw0SB4_R/view?usp=drivesdk">Projection of Solids</a></li>
+                    <li><a href="https://drive.google.com/file/d/13pzkVQcIcP30BVu5418-BR9vnDwMK6Rt/view?usp=drivesdk">Projection of Planes</a></li>
+                    <li><a href="https://drive.google.com/file/d/13v2lME7hrnThCjNdLEqpwc9gVoNd2RX3/view?usp=drivesdk">Sections of Solids</a></li>
+                    <li><a href="https://drive.google.com/file/d/13jpKjqEYcHzKBIT2y238qW9KNXcHTLW0/view?usp=drivesdk">Intersection of Solids</a></li>
+                    <li><a href="https://drive.google.com/file/d/13Ts9WXaioDe-9UuWMvO3KdaDWFot0jBy/view?usp=drivesdk">Development of Surfaces</a></li>
+                    <li><a href="https://drive.google.com/file/d/13knT4RaSDgBZ7Qq2zRYe_zot88sb8E7p/view?usp=drivesdk">Isometric Projections</a></li>
+                </ul>
+            </div>
+                        <div class="material_item">
+                <p>Sheet Solution Videos</p>
+                <ul>
+                    <li><a href="https://youtu.be/brDTKUf-P70">Projection of Lines</a></li>
+                    <li><a href="https://youtu.be/tcKB_kTBg-U">Projection of Planes</a></li>
+                    <li><a href="https://youtu.be/Ff5nENn-fnM">Engineering Curves</a></li>
+                    <li><a href="https://youtu.be/MJUJ4QDgUjs">Projection of Solids</a></li>
+                </ul>
+            </div>
+   
+            <div class="material_item">
+                <p>Lecture Videos</p>
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1ORTYSHDvuFfrPGgs0yJasvShuBWdaH_v/view?usp=drive_link">L1_L2</a></li>
+                    <li><a href="https://drive.google.com/file/d/1d1C7knmDGmSiGLgFrT5n91HoEyFN9jO1/view?usp=drive_link">L2_L3</a></li>
+                    <li><a href="https://drive.google.com/file/d/1GQErebKYanZGk2ZiJ98H4nk4FkpPFWp5/view?usp=drive_link">L4</a></li>
+                    <li><a href="https://drive.google.com/file/d/1IHRYoy_m_H8l1gvFR7EzuwxodJf3b0fE/view?usp=drive_link">L5</a></li>
+                    <li><a href="https://drive.google.com/file/d/1EuM06Wffrh33rnps9qQOJb__5URiGMFD/view?usp=drive_link">L6</a></li>
+                    <li><a href="https://drive.google.com/file/d/1nmb4WLBs2c8eb6LSQGgRCZc1Z99ne9PT/view?usp=drive_link">L7</a></li>
+                    <li><a href="https://drive.google.com/file/d/10gxLf3BjfTQdDY3l0wjdP4fkBSKE9cg5/view?usp=drive_link">L8</a></li>
+                    <li><a href="https://drive.google.com/file/d/1J5PqxVTcALhpYqt3UlhObgYcOt3Azheh/view?usp=drive_link">L9</a></li>
+                    <li><a href="https://drive.google.com/file/d/15SxGmB_JBSiNxgfRvf08Qt9CWDTrRL4T/view?usp=drive_link">L10</a></li>
+                    <li><a href="https://drive.google.com/file/d/1pUfRWsY2roXyKkksZLx75xNrK500j51E/view?usp=drive_link">L11</a></li>
+                    <li><a href="https://drive.google.com/file/d/1qW7O7PC2U63u9-gPU2YLGgihrO2FEJ2s/view?usp=drive_link">L12</a></li>
+                    <li><a href="https://drive.google.com/file/d/1Xyr6sZoCBdF8u-iIm76JU84XuqEmoJGx/view?usp=drive_link">L13</a></li>
+                    <li><a href="https://drive.google.com/file/d/1B89TiCS9VCNTAxUANyTlQnCYuwGAgawI/view?usp=drive_link">L14</a></li>
+                    <li><a href="https://drive.google.com/file/d/1_LJRft6cVKfWv7FBc5OePQyhEd-TI9Kg/view?usp=drive_link">L15</a></li>
+                    <li><a href="https://drive.google.com/file/d/1mPVTDrqOBHPI8FCix4QLrHUn8ZD6cKa_/view?usp=drive_link">L16</a></li>
+                    <li><a href="https://drive.google.com/file/d/1CGQ_K6Ew_yK1IBIeb0Iq2IdGCA_YwjIZ/view?usp=drive_link">L17</a></li>
+                    <li><a href="https://drive.google.com/file/d/1Z5omKuxnthbRTT-1Sj8w-g1qwJDHqAAu/view?usp=drive_link">L18</a></li>
+                    <li><a href="https://drive.google.com/file/d/1rFjI8ffQ7l0lzJ1rYE28LeFMA3zltBUk/view?usp=drive_link">L19</a></li>
+                    <li><a href="https://drive.google.com/file/d/19Ykmw37kPA1jYQucVp4RwkEoZd3LbU5M/view?usp=drive_link">L21_L22</a></li>
+                    <li><a href="https://drive.google.com/file/d/1x25XWX6iw6ieOUTHPBg9sT6T_9mBosL_/view?usp=drive_link">L23_L25</a></li>
+                    <li><a href="https://drive.google.com/file/d/1AyoeBukPVljO-H55vQdr99FEH5t6FdtK/view?usp=drive_link">L26</a></li>
+                    <li><a href="https://drive.google.com/file/d/1p8_-XDWR9H1gT7toAn9btO58NNhnMdsa/view?usp=drive_link">L27_L30</a></li>
+                    <li><a href="https://drive.google.com/file/d/1_-OhDFkr85frHI_at106jWEm3COsQWLv/view?usp=drive_link">L31_L33</a></li>
+                    <li><a href="https://drive.google.com/file/d/1LyGu1LUHzzI76ydHl6awbayqsQFUEVhs/view?usp=drive_link">L34</a></li>
+                    <li><a href="https://drive.google.com/file/d/14rK4u_TrXCXBlLxTs97cS-6CTkGYdm_a/view?usp=drive_link">L35_L39</a></li>
+                </ul>
+            </div>
+         <div class="material_item">
+                <p>Question Bank</p>
+                <ul>
+                    <li><a href="https://drive.google.com/drive/folders/1D-J08RVdFJUCfbSWRSlOwaygaLIlhZeE">Question Bank</a></li>
+                </ul>
+            </div>
+            <div class="material_item">
+                <p>Books</p>
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1b6qPaSeI0r4UHfLmruZRMB-PHYg-LNGm/view?usp=drive_link">N.D. Bhatt</a></li>
+                    <li><a href="https://drive.google.com/file/d/13KXeVsV2tfRe3E9KJMlJIYWt5lwZk3lF/view?usp=drivesdk">K Venkata Reddy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Optional: Add interactivity for links
+        const links = document.querySelectorAll('.material_item a');
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                // Uncomment to add custom behavior
+                // e.preventDefault();
+                // alert(`Opening ${link.textContent} resource!`);
+            });
+        });
+    </script>
+</body>
+</html>
