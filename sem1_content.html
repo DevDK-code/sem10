@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BTECH M.E. I SEM</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    position: relative;
+    background-color: #ffc107;
+    color: black;
+    text-align: center;
+    padding: 10px 70px;
+    font-size: 1.2em;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.hyper {
+    color: inherit;
+    text-decoration: none;
+    font: inherit;
+}
+
+/* Round Buttons */
+.cms-btn,
+.books-btn,
+.link-btn {
+    position: absolute;
+    top: 5px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    font-size: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.cms-btn {
+    left: 8px;
+}
+
+.books-btn {
+    left: 48px;
+}
+
+.link-btn {
+    right: 8px;
+}
+
+.cms-btn:hover,
+.books-btn:hover,
+.link-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Moving Header Text */
+.header-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: move 10s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab {
+    margin: 0 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.tab.active {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+/* Content List */
+.content-list {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.item-number {
+    width: 30px;
+    height: 30px;
+    background-color: #ffc107;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.item-title {
+    font-size: 1em;
+    color: #333;
+}
+
+@media (max-width: 400px) {
+    .content-list {
+        padding: 10px;
+    }
+
+    .item {
+        padding: 8px;
+    }
+
+    .item-number {
+        width: 25px;
+        height: 25px;
+        font-size: 0.9em;
+    }
+
+    .item-title {
+        font-size: 0.9em;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <button class="cms-btn"
+        onclick="window.location.href='https://cmsmarks.vercel.app/'">
+        CMS
+    </button>
+
+    <button class="books-btn"
+        onclick="window.location.href='https://devdk-code.github.io/BookBank/'">
+        Books
+    </button>
+
+    <button class="link-btn"
+        onclick="window.location.href='link.html'">
+        🔗
+    </button>
+
+    <div class="header-text">
+        BTECH <i>M.E. 1st sem</i>
+    </div>
+
+</div>
+
+<div class="tabs">
+    <div class="tab active"><a href="https://drive.google.com/drive/folders/1sr07cbU68NR4t3Js1DQYOrFhjnusWRUo" class="hyper" >Content</a></div>
+    <div class="tab">Description</div>
+    <div class="tab">FAQ</div>
+    <div class="tab">Fbt</div>
+</div>
+
+    <div class="content-list">
+        
+        <div class="item" onclick="navigateTo('sm1_chm_181.html')">
+            <div class="item-number">1</div>
+            <div class="item-title">CHM181 <i>APPLIED CHEMISTRY</i></div>
+        </div>
+        
+        <div class="item" onclick="navigateTo('sm1_chm_182.html')">
+            <div class="item-number">2</div>
+            <div class="item-title">CHM182 <i>APPLIED CHEMISTRY LAB.</i></div>
+        </div>
+        
+        <div class="item" onclick="navigateTo('sm1_mam_181.html')">
+            <div class="item-number">3</div>
+            <div class="item-title">MAM181 <i>ENGINEERING MATHEMATICS I</i></div>
+        </div>
+        
+        <div class="item" onclick="navigateTo('sm1_mem_101&102.html')">
+            <div class="item-number">4</div>
+            <div class="item-title">MEM101 <i>GRAPHIC SCIENCE</i></div>
+        </div>
+        
+        <div class="item" onclick="navigateTo('sm1_mem_101&102.html')">
+            <div class="item-number">5</div>
+            <div class="item-title">MEM102 <i>ENGINEERING DRAWING I</i></div>
+        </div>
+        
+        <div class="item" onclick="navigateTo('sm1_mem_103.html')">
+            <div class="item-number">6</div>
+            <div class="item-title">MEM103 <i>MANUFACTURING PROCESSES I</i></div>
+        </div>
+        
+        <div class="item" onclick="navigateTo('sm1_mem_104.html')">
+            <div class="item-number">7</div>
+            <div class="item-title">MEM104 <i>WORKSHOP PRACTICE I</i></div>
+        </div>
+        
+        <div class="item" onclick="navigateTo('sm1_phm_181.html')">
+            <div class="item-number">8</div>
+            <div class="item-title">PHM181 <i>APPLIED PHYSICS I</i></div>
+        </div>
+        
+        <div class="item" onclick="navigateTo('sm1_phm_182.html')">
+            <div class="item-number">9</div>
+            <div class="item-title">PHM182 <i>APPLIED PHYSICS LAB.</i></div>
+        </div>
+        
+        <div class="item" onclick="navigateTo('ENH.html')">
+            <div class="item-number">10</div>
+            <div class="item-title">ENH181 <i>ENGLISH I</i></div>
+        </div>
+        
+        <div class="item" onclick="navigateTo('ech181.html')">
+            <div class="item-number">11</div>
+            <div class="item-title">GKC181 <i>SC.METH., G.K. & CURRENT AFFAIRS I</i></div>
+        </div>
+        
+        <div class="item" onclick="navigateTo('sm1_rdc_181.html')">
+            <div class="item-number">12</div>
+            <div class="item-title">RDC181 <i>AGRICULTURAL OPERATIONS I</i></div>
+        </div>
+        
+        <div class="item" onclick="navigateTo('bbh.html')">
+            <div class="item-number">13</div>
+            <div class="item-title">RDC182 <i>SOCIAL SERVICE</i></div>
+        </div>
+        
+    </div>
+
+<script>
+const tabs = document.querySelectorAll('.tab');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+    });
+});
+
+function navigateTo(url) {
+    window.location.href = url;
+}
+</script>
+</body>
+    <script src="user.js"></script>
+</html>
